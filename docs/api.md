@@ -206,6 +206,7 @@
   * [request.failure()](#requestfailure)
   * [request.frame()](#requestframe)
   * [request.headers()](#requestheaders)
+  * [request.initiator()](#requestinitiator)
   * [request.method()](#requestmethod)
   * [request.postData()](#requestpostdata)
   * [request.resourceType()](#requestresourcetype)
@@ -2359,6 +2360,9 @@ page.on('requestfailed', request => {
 
 #### request.headers()
 - returns: <[Object]> An object with HTTP headers associated with the request. All header names are lower-case.
+
+#### request.initiator()
+- returns: <?[Object]> An object with request initiator data.
 
 #### request.method()
 - returns: <[string]> Request's method (GET, POST, etc.)
